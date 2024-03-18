@@ -36,7 +36,7 @@ flowchart TD
 13  FIM_ALGORÍTMO 
 ```
 ### Teste de mesa
-| numero | numero >= 0 | resto | resto == 0 | Saída |
+| Número | Número >= 0 | resto | resto == 0 | Mensagem |
 | -- | -- | -- | -- | -- | 
 | -1 | F |   |   | "O número deve ser postivo!" |
 | 0  | V | 0 | V | "O número é par!" |
@@ -64,9 +64,10 @@ FIM_ALGORITMO
 
 ### Teste de mesa
 
-| nome_coluna1 | nome_coluna2 | nome_coluna3 | nome_coluna4 | nome_coluna5 | 
-|      --      |      --      |      --      |      --      |      --      | 
-| Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
-| verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
+| Salário Atual| Salário Atual <= 500 | Novo Salário                               | 
+|      --      |      --              |      --                                    |
+| 501          | F                    | Multiplique o Salário Atual por 1.10       |
+| 500          | V                    | Multiplique o Salário Atual por 1.20       |
+| 499          | V                    | Multiplique o Salário Atual por 1.20       |
 
 
