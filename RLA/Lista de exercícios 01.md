@@ -11,7 +11,7 @@ flowchart TD
   B --> C[/número/]
   C --> D{número > 0}
   D --NÃO--> E[O número não e positivo!]
-  D --SIM--> F[rest = número % 2]
+  D --SIM--> F[resto = número % 2]
   E --> Z([FIM])
   F --> G{resto == 0}
   G --NÃO--> H{{O número é ímpar}}
@@ -36,12 +36,12 @@ flowchart TD
 13  FIM_ALGORÍTMO 
 ```
 ### Teste de mesa
-| Número | Número >= 0 | resto | resto == 0 | Mensagem |
-| -- | -- | -- | -- | -- | 
-| -1 | F |   |   | "O número deve ser postivo!" |
-| 0  | V | 0 | V | "O número é par!" |
-| 13 | V | 1 | F | "O número é ímpar!" |
-| 30 | V | 0 | V | "O número é par!" |
+| Número | Número >= 0 | resto | resto == 0 | Mensagem                      |
+| --     | --          | --    | --         | --                            | 
+| -1     | F           |       |            | "O número deve ser postivo!"  |
+| 0      | V           | 0     | V          | "O número é par!"             |
+| 13     | V           | 1     | F          | "O número é ímpar!"           |
+| 30     | V           | 0     | V          | "O número é par!"             |
 
 
 ## Exercício 2 
