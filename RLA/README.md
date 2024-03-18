@@ -1,1 +1,2 @@
-Repositório da disciplina de Raciocínio Lógico Algorítmico
+# Repositório da disciplina de Raciocínio Lógico Algorítmico
+## Aluno: Vinicius Albuquerque
