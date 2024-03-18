@@ -1,8 +1,8 @@
-# Unifor
+# Unifor - Lista de Exercícios 01
 **Nome:** Vinicius Albuquerque
 **Disciplina:** Raciocínio Lógico Algorítmico
 
-## Exercício 3 
+## Exercício 1 
 ### Fluxograma
 
 ```mermaid
@@ -22,7 +22,7 @@ flowchart TD
 ### Pseudocódigo
 ```
 1  ALGORÍTMO verifica_par_ímpar
-2  DECLARE numero, resto NÙMERICO
+2  DECLARE número, resto NUMÉRICO
 3  ESCREVA "Digite um número"
 4  LEIA número
 5  SE número > 0
@@ -30,8 +30,43 @@ flowchart TD
 7     SE resto == 0 ENTÃO
 8        ESCREVA "O número é par!"
 9     SENÃO
-10       ESCREVA "O nùmero não é ímpar!"
+10       ESCREVA "O número não é ímpar!"
 11  SENÃO
 12    ESCREVA "O número não é positivo"
 13  FIM_ALGORÍTMO 
 ```
+### Teste de mesa
+| numero | numero >= 0 | resto | resto == 0 | Saída |
+| -- | -- | -- | -- | -- | 
+| -1 | F |   |   | "O número deve ser postivo!" |
+| 0  | V | 0 | V | "O número é par!" |
+| 13 | V | 1 | F | "O número é ímpar!" |
+| 30 | V | 0 | V | "O número é par!" |
+
+
+## Exercício 2 
+### Fluxograma
+```mermaid
+flowchart TD
+    A((INÍCIO)) --ENTRADA--> B{{Salário Atual}}
+    B --Salário <= 500--> D{Aumento de 20%}
+    B --Salário > 500--> C{Aumento de 10%}
+    C --> G[Novo Salário = Salário Atual * 1.10]
+    G --> H
+    D --> E[Novo Salário = Salário Atual * 1.20]
+    E --> H((FIM))
+```
+### Pseudocódigo
+```
+Algoritmo ContaAprovacoes
+FIM_ALGORITMO
+```
+
+### Teste de mesa
+
+| nome_coluna1 | nome_coluna2 | nome_coluna3 | nome_coluna4 | nome_coluna5 | 
+|      --      |      --      |      --      |      --      |      --      | 
+| Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
+| verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
+
+
