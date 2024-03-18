@@ -20,7 +20,7 @@ flowchart TD
 ```
 ### Pseudocódigo
 ```
-1  ALGORÍTMO verifica_par_ímpar
+1  ALGORITMO verifica_par_ímpar
 2  DECLARE número, resto NUMÉRICO
 3  ESCREVA "Digite um número"
 4  LEIA número
@@ -32,7 +32,7 @@ flowchart TD
 10       ESCREVA "O número não é ímpar!"
 11  SENÃO
 12    ESCREVA "O número não é positivo"
-13  FIM_ALGORÍTMO 
+13  FIM_ALGORITMO 
 ```
 ### Teste de mesa
 | Número | Número >= 0 | resto | resto == 0 | Mensagem                      |
@@ -71,7 +71,6 @@ flowchart TD
 11    ESCREVA "Novo salário do funcionário: ", novo_salario
 12 FIM_ALGORITMO
 ```
-
 ### Teste de mesa
 
 | Salário Atual| Salário Atual <= 500 | Novo Salário                               | 
@@ -100,13 +99,13 @@ flowchart TD
 4. ESCREVA "Digite a primeira nota do aluno: " 
 5.   LEIA nota1 
 6. ESCREVA "Digite a segunda nota do aluno: " 
-7    LEIA nota2 
-7.  media = (nota1 + nota2) / 2 
-8.   SE media >= 7 ENTAO 
-9.    ESCREVA "Aluno Aprovado"
-10.  SENAO 
-11.     ESCREVA "Aluno Reprovado" 
-12.  FIM_SE 
-13. FIM
+7.   LEIA nota2 
+8. CALCULE media = (nota1 + nota2) % 2 
+9.   SE media >= 7
+10.    ENTAO, ESCREVA "Aluno Aprovado"
+11.  SENAO 
+12.     ESCREVA "Aluno Reprovado" 
+13.  FIM_SE 
+14. FIM_ALGORITMO
 ```
 
