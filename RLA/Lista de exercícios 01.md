@@ -48,7 +48,8 @@ flowchart TD
 ### Fluxograma
 ```mermaid
 flowchart TD
-    A((INÍCIO)) --ENTRADA--> B{{Salário Atual}}
+    A((INÍCIO)) --> I[/Digite o salário do funcionário:/]
+    I --> B{{Salário Atual}}
     B --Salário <= 500--> D{Aumento de 20%}
     B --Salário > 500--> C{Aumento de 10%}
     C --> G[Novo Salário = Salário Atual * 1.10]
@@ -58,16 +59,26 @@ flowchart TD
 ```
 ### Pseudocódigo
 ```
-Algoritmo ContaAprovacoes
-FIM_ALGORITMO
+1 ALGORITMO calcula_aumento_salário
+2 DECLARE salario, novo_salario: REAL
+3 ESCREVA "Digite o salário atual do funcionário: "
+4 INICIO
+5     LEIA salario
+6     SE salario <= 500 ENTAO
+7         novo_salario = salario * 1.20
+8     SENÃO
+9         novo_salario = salario * 1.10
+10    FIM_SE
+11    ESCREVA "Novo salário do funcionário: ", novo_salario
+12 FIM_ALGORITMO
 ```
 
 ### Teste de mesa
 
 | Salário Atual| Salário Atual <= 500 | Novo Salário                               | 
 |      --      |      --              |      --                                    |
-| 501          | F                    | Multiplique o Salário Atual por 1.10       |
-| 500          | V                    | Multiplique o Salário Atual por 1.20       |
-| 499          | V                    | Multiplique o Salário Atual por 1.20       |
+| R$ 501.00    | F                    | Multiplique o Salário Atual por 1.10       |
+| R$ 500.00    | V                    | Multiplique o Salário Atual por 1.20       |
+| R$ 499.00    | V                    | Multiplique o Salário Atual por 1.20       |
 
 
