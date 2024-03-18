@@ -4,7 +4,6 @@
 
 ## Exercício 1 
 ### Fluxograma
-
 ```mermaid
 flowchart TD  
   A([INICIO]) --> B{{Digite um número: }}
@@ -81,4 +80,33 @@ flowchart TD
 | R$ 500.00    | V                    | Multiplique o Salário Atual por 1.20       |
 | R$ 499.00    | V                    | Multiplique o Salário Atual por 1.20       |
 
+
+## Exercício 3 
+### Fluxograma
+```mermaid
+flowchart TD
+    Inicio((INÍCIO)) --> Nota1[Digite a primeira nota do aluno:]
+    Nota1 --> Nota2[Digite a segunda nota do aluno:]
+    Nota2 --Calcular a média das notas--> ResultadoMédia[ Some nota 1 + nota 2, depois divida o resultado da soma por 2.]
+    ResultadoMédia --> Situacao[Verificar a média do aluno]
+    Situacao --Média >= 7--> Aprovado[Situação: Aluno Aprovado]
+    Situacao --Média < 7--> Reprovado[Situação: Aluno Reprovado]
+```
+### Pseudocódigo
+```
+1. ALGORITMO calcula_media_situacao 
+2. DECLARE nota1, nota2, media: REAL 
+3. INICIO
+4. ESCREVA "Digite a primeira nota do aluno: " 
+5.   LEIA nota1 
+6. ESCREVA "Digite a segunda nota do aluno: " 
+7    LEIA nota2 
+7.  media = (nota1 + nota2) / 2 
+8.   SE media >= 7 ENTAO 
+9.    ESCREVA "Aluno Aprovado"
+10.  SENAO 
+11.     ESCREVA "Aluno Reprovado" 
+12.  FIM_SE 
+13. FIM
+```
 
