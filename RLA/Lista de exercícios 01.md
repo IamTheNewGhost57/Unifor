@@ -102,9 +102,9 @@ flowchart TD
 7.   LEIA nota2 
 8. CALCULE media = (nota1 + nota2) % 2 
 9.   SE media >= 7
-10.    ENTAO, ESCREVA "Aluno Aprovado"
+10.    ENTAO, ESCREVA "Situação: Aluno Aprovado"
 11.  SENAO 
-12.     ESCREVA "Aluno Reprovado" 
+12.     ESCREVA "Situação: Aluno Reprovado" 
 13.  FIM_SE 
 14. FIM_ALGORITMO
 ```
