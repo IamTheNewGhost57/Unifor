@@ -96,7 +96,7 @@ flowchart TD
 ### Pseudocódigo
 ```
 1. ALGORITMO calcular_media_situacao 
-2. DECLARE nota1, nota2, media: REAL, POSITIVO
+2. DECLARE nota1, nota2, media: REAL, POSITIVO, >0, <=10
 3. INICIO
 4. ESCREVA "Digite a primeira nota do aluno: " 
 5.   LEIA nota1 
