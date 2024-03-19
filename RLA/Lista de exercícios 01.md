@@ -20,7 +20,7 @@ flowchart TD
 ```
 ### Pseudocódigo
 ```
-1  ALGORITMO verifica_par_ímpar
+1  ALGORITMO verificar_par_ímpar
 2  DECLARE número, resto NUMÉRICO
 3  ESCREVA "Digite um número"
 4  LEIA número
@@ -58,8 +58,8 @@ flowchart TD
 ```
 ### Pseudocódigo
 ```
-1 ALGORITMO calcula_aumento_salário
-2 DECLARE salario, novo_salario: REAL
+1 ALGORITMO calcular_aumento_salário
+2 DECLARE salario, novo_salario: REAL, POSITIVO
 3 ESCREVA "Digite o salário atual do funcionário: "
 4 INICIO
 5     LEIA salario
@@ -68,7 +68,7 @@ flowchart TD
 8     SENÃO
 9         novo_salario = salario * 1.10
 10    FIM_SE
-11    ESCREVA "Novo salário do funcionário: ", novo_salario
+11 ESCREVA "Novo salário do funcionário: ", novo_salario
 12 FIM_ALGORITMO
 ```
 ### Teste de mesa
@@ -84,17 +84,19 @@ flowchart TD
 ### Fluxograma
 ```mermaid
 flowchart TD
-    Inicio((INÍCIO)) --> Nota1[Digite a primeira nota do aluno:]
-    Nota1 --> Nota2[Digite a segunda nota do aluno:]
+    Inicio((INÍCIO)) --> Nota1[/Digite a primeira nota do aluno:/]
+    Nota1 --> Nota2[/Digite a segunda nota do aluno:/]
     Nota2 --Calcular a média das notas--> ResultadoMédia[ Some nota 1 + nota 2, depois divida o resultado da soma por 2.]
     ResultadoMédia --> Situacao[Verificar a média do aluno]
     Situacao --Média >= 7--> Aprovado[Situação: Aluno Aprovado]
     Situacao --Média < 7--> Reprovado[Situação: Aluno Reprovado]
+    Aprovado --> Fim((FIM))
+    Reprovado --> Fim
 ```
 ### Pseudocódigo
 ```
-1. ALGORITMO calcula_media_situacao 
-2. DECLARE nota1, nota2, media: REAL 
+1. ALGORITMO calcular_media_situacao 
+2. DECLARE nota1, nota2, media: REAL, POSITIVO
 3. INICIO
 4. ESCREVA "Digite a primeira nota do aluno: " 
 5.   LEIA nota1 
@@ -108,4 +110,45 @@ flowchart TD
 13.  FIM_SE 
 14. FIM_ALGORITMO
 ```
+### Teste de mesa
+| Primeira nota | Segunda nota | Média | Média >=7 | Situação  | 
+|      --       |      --      |   --  |      --   |      --   | 
+| 7             | 7            | 7     | V         | Aprovado  |
+| 6             | 8            | 7     | V         | Aprovado  |
+| 5             | 8            | 6,5   | F         | Reprovado |
+| 10            | 2            | 6     | F         | Reprovado |
+
+
+## Exercício 4
+## Exercício 4
+### Fluxograma
+``` mermaid
+flowchart TD
+    INÍCIO((INÍCIO)) --> Idade[/Digite a idade do candidato:/]
+    Idade --> VerificarIdade([Verificar se a idade atende ao requisito da CNH])
+    VerificarIdade --Idade >= 18--> CNHApto([O candidato pode tirar a CNH])
+    VerificarIdade --Idade < 18--> CalcularFaltante([Calcular os anos faltantes para o candidato estar apto])
+    CalcularFaltante --Anos Faltantes--> AnosFaltante[Anos faltantes = 18 - A idade do candidato]
+    --> Fim([FIM])
+    CNHApto --> Fim
+```
+### Pseudocódigo
+1. ALGORITMO verificar_CNH_Apto
+2. DECLARE idade, anos_faltantes: INTEIRO, POSITIVO
+3. ESCREVA "Digite a idade do candidato: "
+4. INICIO
+5. LEIA idade
+6.   SE idade >= 18, ENTAO
+7.     ESCREVA "O candidato pode tirar a CNH"
+8.   SENAO
+9.     anos_faltantes = 18 - idade_candidato
+10. ESCREVA "O candidato não pode tirar a CNH. Faltam 'anos_faltantes' anos para estar apto."
+11.  FIM_SE
+12. FIM
+### Teste de mesa
+| Idade do candidato | Idade >=18   | Anos faltantes | Situação     |
+|      --            |      --      |      --        |      --      |
+| 19                 | V            | 0              | Apto         |
+| 18                 | V            | 0              | Apto         | 
+| 17                 | F            | 1              | Não apto     |
 
