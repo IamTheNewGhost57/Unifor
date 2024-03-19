@@ -42,6 +42,7 @@ flowchart TD
 | 12 | 3 | 5 | (-20) | 0 | 0|
 | 0 | 9 | 106 | 5 | 120 | 30|
 
+
 ## Exercício 2
 ### Fluxograma
 ```mermaid
@@ -64,10 +65,54 @@ flowchart TD
 ```
 ### Teste de Mesa
 | Celsius | Fórmula                     | Fahrenheit |
-| ------- | --------------------------- | --- |
+| ------- | --------------------------- | -- |
 | -10     | (9/5) * (-10) + 32 = 14     | 14 |
 | 0       | (9/5) * 0 + 32 = 32         | 32 |
 | 25      | (9/5) * 25 + 32 = 77        | 77 |
 | 100     | (9/5) * 100 + 32 = 212      | 212|
+
+
+## Exercício 03
+### Fluxograma
+```mermaid
+flowchart TD
+    Inicio((INÍCIO)) --> NumerosOperador[/Digite os dois números reais e o operador:/]
+    NumerosOperador --> CalcularOP[Calcular a operação selecionada]
+    CalcularOP --Resultado--> MostrarResultado[Mostrar o resultado da operação]
+    MostrarResultado --> Fim((FIM))
+```
+### Pseudocódigo
+```
+1. ALGORITMO calcular_operacao
+2. DECLARE numero1, numero2, resultado: REAL
+3. DECLARE operador: CARACTERE
+4. INICIO
+5.     ESCREVA "Digite os dois números reais e o operador: "
+6.     LEIA numero1, numero2, operador
+7.     ESCOLHA operador
+8.         SE "+"
+9.             resultado = numero1 + numero2
+10.        SE "-"
+11.            resultado = numero1 - numero2
+12.        SE "*"
+13.            resultado = numero1 * numero2
+14.        SE "/"
+15.            resultado = numero1 / numero2
+16.        SENÃO
+17.            ESCREVA "Operador inválido!"
+18.    FIM_ESCOLHA
+19.    ESCREVA "O resultado da operação é: ", 'resultado""
+20. FIM_ALGORITMO
+
+```
+### Teste de Mesa
+| numero1 | numero2  | Operador | Operação   | Resultado        |
+| -- | -- | -------- | ---------------------| ----------------- |
+| 5  | 3  | +        | 5 + 3 = 8            | 8                 |
+| 10 | 9  | -        | 10 - 2 = 8           | 1                 |
+| 4  | 6  | *        | 4 * 6 = 24           | 24                |
+| 12 | 4  | /        | 12 / 4 = 3           | 3                 |
+
+
 
 
