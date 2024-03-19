@@ -132,18 +132,20 @@ flowchart TD
     CNHApto --> Fim
 ```
 ### Pseudocódigo
+```
 1. ALGORITMO verificar_CNH_Apto
 2. DECLARE idade, anos_faltantes: INTEIRO, POSITIVO
 3. ESCREVA "Digite a idade do candidato: "
 4. INICIO
 5. LEIA idade
 6.   SE idade >= 18, ENTAO
-7.    ESCREVA "O candidato pode tirar a CNH"
+7.     ESCREVA "O candidato pode tirar a CNH"
 8.   SENAO
-9.    anos_faltantes = 18 - idade_candidato
+9.     anos_faltantes = 18 - idade_candidato
 10. ESCREVA "O candidato não pode tirar a CNH. Faltam 'anos_faltantes' anos para estar apto."
 11.  FIM_SE
 12. FIM
+```
 ### Teste de mesa
 | Idade do candidato | Idade >=18   | Anos faltantes | Situação     |
 |      --            |      --      |      --        |      --      |
