@@ -1,11 +1,11 @@
-# Unifor - Lista de Exercícios 02
+# Unifor - Lista de Exercícios 03
  **Nome:** Vinicius Albuquerque <br>
  **Matrícula:** 2417683 <br>
  **Disciplina:** Raciocínio Lógico Algorítmico <br>
  **Professor:** Ricardo Carubbi <br>
 
 
- ## Exercício 01
+## Exercício 01
 ### Fluxograma
 ```mermaid
 
