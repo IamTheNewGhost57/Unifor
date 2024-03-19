@@ -101,7 +101,7 @@ flowchart TD
 16.        SENÃO
 17.            ESCREVA "Operador inválido!"
 18.    FIM_ESCOLHA
-19.    ESCREVA "O resultado da operação é: ", 'resultado""
+19.    ESCREVA "O resultado da operação é: ", 'resultado'"
 20. FIM_ALGORITMO
 
 ```
@@ -114,5 +114,43 @@ flowchart TD
 | 12 | 4  | /        | 12 / 4 = 3           | 3                 |
 
 
+## Exercício 04
+### Fluxograma
+```mermaid
+flowchart TD
+    Inicio((INÍCIO)) --> Idade[/Digite a idade:/]
+    Idade --> ClassificarIdade([Classificar a idade em categorias])
+    ClassificarIdade --Categoria--> MostrarCategoria[Mostrar a categoria correspondente]
+    MostrarCategoria --> Fim((FIM))
+```
+### Pseudocódigo
+```
+1. ALGORITMO classificar_idade
+2. DECLARE idade: INTEIRO
+3. INICIO
+4.     ESCREVA "Digite a idade: "
+5.     LEIA idade
+6.     SE idade >= 5 E idade <= 7 ENTÃO
+7.         ESCREVA "Categoria: Infantil A"
+8.     SE idade >= 8 E idade <= 10 ENTÃO
+9.         ESCREVA "Categoria: Infantil B"
+10.    SE idade >= 11 E idade <= 13 ENTÃO
+11.        ESCREVA "Categoria: Juvenil A"
+12.    SE idade >= 14 E idade <= 17 ENTÃO
+13.        ESCREVA "Categoria: Juvenil B"
+14.   SENÃO
+15.       ESCREVA "Categoria: Adulto"
+16.    FIM_SE
+17. FIM
+
+```
+### Teste de Mesa
+| Idade | Categoria     | Categoria             |
+| ----- | ------------- | --------------------- |
+| 6     | Infantil A    | Categoria: Infantil A |
+| 9     | Infantil B    | Categoria: Infantil B |
+| 12    | Juvenil A     | Categoria: Juvenil A  |
+| 16    | Juvenil B     | Categoria: Juvenil B  |
+| 20    | Adulto        | Categoria: Adulto     |
 
 
