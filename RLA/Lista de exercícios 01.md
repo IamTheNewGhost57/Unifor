@@ -120,7 +120,6 @@ flowchart TD
 
 
 ## Exercício 4
-## Exercício 4
 ### Fluxograma
 ``` mermaid
 flowchart TD
@@ -139,9 +138,9 @@ flowchart TD
 4. INICIO
 5. LEIA idade
 6.   SE idade >= 18, ENTAO
-7.     ESCREVA "O candidato pode tirar a CNH"
+7.    ESCREVA "O candidato pode tirar a CNH"
 8.   SENAO
-9.     anos_faltantes = 18 - idade_candidato
+9.    anos_faltantes = 18 - idade_candidato
 10. ESCREVA "O candidato não pode tirar a CNH. Faltam 'anos_faltantes' anos para estar apto."
 11.  FIM_SE
 12. FIM
