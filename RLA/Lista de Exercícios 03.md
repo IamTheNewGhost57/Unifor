@@ -8,6 +8,7 @@
 ## Exercício 01
 ### Fluxograma
 ```mermaid
+flowchart TD  
  A([INICIO]) --> B{{Digite um número: }}
   B --> C[/número/]
   C --> D{número > 0}
