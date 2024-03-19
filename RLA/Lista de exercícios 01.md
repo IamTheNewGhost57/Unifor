@@ -1,8 +1,8 @@
 # Unifor - Lista de Exercícios 01
-**Nome:** Vinicius Albuquerque
-**Matrícula:** 2417683
-**Disciplina:** Raciocínio Lógico Algorítmico
-**Professor:** Ricardo Carubbi
+ **Nome:** Vinicius Albuquerque <br>
+ **Matrícula:** 2417683 <br>
+ **Disciplina:** Raciocínio Lógico Algorítmico <br>
+ **Professor:** Ricardo Carubbi <br>
 
 ## Exercício 1 
 ### Fluxograma
