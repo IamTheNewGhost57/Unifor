@@ -44,3 +44,30 @@ flowchart TD
 
 ## Exercício 2
 ### Fluxograma
+```mermaid
+flowchart TD
+    Inicio((INÍCIO)) -->Celsius[/Digite a temperatura em Celsius:/]
+    Celsius -->CalcularFahrenheit([Calcular temperatura em Fahrenheit])
+    CalcularFahrenheit --> MostrarFahrenheit[Mostrar temperatura em Fahrenheit]
+    MostrarFahrenheit --> Fim((FIM))
+```
+### Pseudocódigo
+```
+1. ALGORITMO converter_Celsius_Fahrenheit
+2. DECLARE celsius, fahrenheit: REAL
+3. ESCREVA "Digite a temperatura em Celsius: "
+4. INICIO
+5.     LEIA celsius
+6.     fahrenheit = (9/5) * celsius + 32
+7.     ESCREVA "A temperatura em Fahrenheit é: ", fahrenheit
+8. FIM_ALGORITMO
+```
+### Teste de Mesa
+| Celsius | Fórmula                     | Fahrenheit |
+| ------- | --------------------------- | --- |
+| -10     | (9/5) * (-10) + 32 = 14     | 14 |
+| 0       | (9/5) * 0 + 32 = 32         | 32 |
+| 25      | (9/5) * 25 + 32 = 77        | 77 |
+| 100     | (9/5) * 100 + 32 = 212      | 212|
+
+
