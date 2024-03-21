@@ -12,13 +12,13 @@ flowchart TD
  A([INICIO]) --> B{{Digite um número: }}
   B --> C[/número/]
   C --> D{número > 0}
-  D --NÃO--> E[O número não e positivo!]
+  D --NÃO--> E[/Por favor, digite um número maior ou igual a zero:/]
   D --SIM--> F[resto = número % 2]
-  E --> Z([FIM])
+  E --> F
   F --> G{resto == 0}
   G --NÃO--> H{{O número é ímpar}}
   G --SIM--> I{{O número é par!}}
-  H --> Z
+  H --> Z([FIM])
   I --> Z
 ```
 ### Pseudocódigo
