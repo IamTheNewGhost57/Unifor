@@ -77,8 +77,10 @@ flowchart TD
 ```mermaid
 flowchart TD
     Inicio((INÍCIO)) --> NumerosOperador[/Digite os dois números reais e o operador:/]
-    NumerosOperador --> CalcularOP[Calcular a operação selecionada]
-    CalcularOP --Resultado--> MostrarResultado[Mostrar o resultado da operação]
+    NumerosOperador --SE + - * %--> CalcularOP[Calcular a operação selecionada]
+    NumerosOperador --SENÃO--> OperadorValido[/Digite um operador válido/]
+    OperadorValido --> CalcularOP
+    CalcularOP --Resultado--> MostrarResultado[O resultado da operacao é:]
     MostrarResultado --> Fim((FIM))
 ```
 ### Pseudocódigo
