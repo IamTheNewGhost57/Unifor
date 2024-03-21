@@ -101,7 +101,7 @@ flowchart TD
 14.        SE "/"
 15.            resultado = numero1 / numero2
 16.        SENÃO
-17.            ESCREVA "Operador inválido!"
+17.            ESCREVA "Digite um operador valido!"
 18.    FIM_ESCOLHA
 19.    ESCREVA "O resultado da operação é: ", 'resultado'"
 20. FIM_ALGORITMO
