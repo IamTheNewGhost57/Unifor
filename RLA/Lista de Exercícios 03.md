@@ -131,7 +131,7 @@ flowchart TD
     Leitura --> Condicao{Nota >= 0 ?}
     Condicao --Verdadeiro--> Verdadeiro([Somar nota e incrementar contador])
     Verdadeiro --> Leitura
-    Condicao --> |Falso| Falso[Calcular e mostrar média e quantidade]
+    Condicao --Falso--> Falso[Calcular e mostrar média e quantidade]
     Falso --> Media[Calcular média e quantidade]
     Media --> Fim((FIM))
 ```
