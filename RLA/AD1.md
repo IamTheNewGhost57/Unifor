@@ -1,3 +1,10 @@
+# Unifor - Lista de Exercícios 01
+ **Nome:** Vinicius Albuquerque <br>
+ **Matrícula:** 2417683 <br>
+ **Disciplina:** Raciocínio Lógico Algorítmico <br>
+ **Professor:** Ricardo Carubbi <br>
+
+ 
  ← 
 ## Questão 01
 ### Pseudocódigo
